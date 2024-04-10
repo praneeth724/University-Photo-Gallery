@@ -1,0 +1,39 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Gradient background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for better readability */
+}
+
+.introduction p {
+    color: #000000; /* Text color */
+    font-size: 18px; /* Font size */
+    line-height: 1.5; /* Line height */
+    text-align: justify; /* Justify text */
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden; /* Ensure content within gallery is clipped */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 100%; /* Ensure each image takes full width */
+    transition: transform 0.5s ease; /* Add transition for smooth sliding */
+}
+
+img {
+    width: 100%;
+    height: 450px;
+    display: block; /* Remove default image spacing */
+    border-radius: 5px;
+}
